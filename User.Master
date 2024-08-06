@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="User.Master.cs" Inherits="User" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style2
+        {
+            height: 18px;
+        }
+        .style3
+        {
+            text-align: center;
+            height: 30px;
+            color: #010044;
+            background-color: #CCFFCC;
+        }
+        .style5
+        {
+            height: 146px;
+            text-align: center;
+            background-color: #CCFFCC;
+            font-size: xx-large;
+            color: #010045;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table align="center">
+        <tr>
+           <td class="style5">
+               <asp:Image ID="Image1" runat="server" Height="54px" ImageUrl="~/IMG/lenscart/logo/Lenskart-Logo-500x281.png" 
+                   Width="115px" 
+                   
+                   
+                   style="margin-right: 0px; margin-top: 0px; text-align: center; background-color: #CCFFCC;" />
+               &nbsp;<asp:Label ID="Label1" runat="server" Height="50px" 
+                   
+                   style="font-weight: 700; color: #000066; font-size: xx-large; font-family: Arial, Helvetica, sans-serif;" Text="EYEWEAR" 
+                   Width="172px" Font-Size="XX-Large"></asp:Label>
+               </td>
+         </tr>
+
+         <tr>
+           <td>
+               <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" BackColor="White" 
+                   BorderColor="White" BorderStyle="Dashed" BorderWidth="10px" ForeColor="Black" 
+                   Height="32px" RenderingMode="Table" Width="1216px" 
+                   
+                   
+                   style="text-align: center; margin-left: 0px; color: #010045; font-weight: 700; font-size: medium;">
+                   <Items>
+                       <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Home.aspx"></asp:MenuItem>
+                       <asp:MenuItem Text="Cart" Value="Cart" NavigateUrl="~/Cart.aspx"></asp:MenuItem>
+                       <asp:MenuItem Text="About Us" Value="About_us" NavigateUrl="~/Aboutus.aspx"></asp:MenuItem>
+                       <asp:MenuItem Text="Contact Us" Value="Contact_us" 
+                           NavigateUrl="~/Contact_us.aspx"></asp:MenuItem>
+                       <asp:MenuItem Text="Logout" Value="Logout" NavigateUrl="~/Logout.aspx"></asp:MenuItem>
+                   </Items>
+               </asp:Menu>
+             </td>
+         </tr>
+    
+        <tr>
+           <td class="style2"></td>
+         </tr>
+
+        <tr>
+           <td class="style2">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder></td>
+         </tr>
+
+         <tr>
+           <td class="style3"><marquee>©All Rights Reserved @Eyewear.com</marquee></td>
+         </tr>
+    
+    </table>
+    
+    </form>
+</body>
+</html>

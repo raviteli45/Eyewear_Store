@@ -1,0 +1,44 @@
+﻿body 
+{
+    background-image:http://localhost:49683/Project_ihone/IMG/001.jpg;
+}
+.card
+{
+    width:250px;
+    height:250px;
+    position:absolute;
+    cursor:pointer;
+    backdrop-filter:blur(10px);
+    border-radius:8px;
+    background:rgba(0,0,0,0.5);
+   
+}
+.abc
+{
+    border-radius:12px;
+    color: #FFFFFF;
+    font-weight: 700;
+    background-color: #000066;
+}
+.t1
+{
+    border-radius:12px;
+}
+.t2
+{
+    border-radius:12px;
+}
+.t3
+{
+    border-radius:12px;
+    color: #FFFFFF;
+    font-weight: 700;
+    background-color: #000066;
+}
+.t4
+{
+    border-radius:12px;
+    color: #FFFFFF;
+    font-weight: 700;
+    background-color: #000066;
+}
